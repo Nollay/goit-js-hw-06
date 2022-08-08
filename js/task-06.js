@@ -6,10 +6,13 @@ inputEl.addEventListener('blur', imputBlur)
 
 function imputBlur(event) {
     console.log(event.currentTarget.value.length)
+    
     if (event.currentTarget.value.length === Number(inputEl.dataset.length)) {
-        return inputMainEl.classList.add("valid");
+        return inputMainEl.classList.add("valid"), inputMainEl.classList.remove("invalid");
+        
     } else {
         inputMainEl.classList.add("invalid");
+        inputMainEl.classList.remove("valid");
     }
 }
 

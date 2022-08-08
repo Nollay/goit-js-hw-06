@@ -11,10 +11,10 @@ colorValue.textContent = '#ffffff';
 changeColorButton.addEventListener('click', onChangeColorButton);
 
 function onChangeColorButton(event) {
-  event.preventDefault();
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  colorValue.innerHTML = `${getRandomHexColor()}`;
-
   const newColor = getRandomHexColor()
+  bodyEl.style.backgroundColor = newColor;
+  colorValue.innerHTML = newColor;
+
+  
   console.log(newColor)
 } 

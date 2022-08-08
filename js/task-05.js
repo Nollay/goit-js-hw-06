@@ -7,5 +7,5 @@ function imputChange(event) {
     console.log(event.currentTarget.value);
     if (inputEl.value === '') {
         return spanAnonymEl.textContent = 'Anonymous';
-    } else spanAnonymEl.textContent = event.currentTarget.value;
+    } else { spanAnonymEl.textContent = event.currentTarget.value; }
 };
